@@ -1,0 +1,80 @@
+
+#################################################################################################
+
+  #########     ########    ########   ########   ########    ########    #######     ########
+ ###     ###   ##      ##  ##      ##  ##        ##       ##     ##      ##     ##   ##       ##        
+ ##       ##   ##          ##      ##  ##        ##              ##      ##     ##   ##                 
+ ###########   ########    ########    ########   #########      ##      ##     ##   #########    
+ ##       ##           ##  ##      ##  ##                 ##     ##      ##     ##            ##           
+ ##       ##   ##      ##  ##      ##  ##         ##      ##     ##      ##     ##   ##       ##        
+ ##       ##    ########    ########   ########    ########      ##       #######     #########  
+
+#################################################################################################
+
+
+
+
+
+
+
+ideas = {
+
+	country = {
+		Weltwirtschaftskrise = {
+			picture = weltwirtschaftskrise_icon
+
+			allowed = {
+				tag = GER
+			}
+			available = {}
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.20        # -20% Factory Output
+            	stability_factor = -0.60                   # -60% Stability
+				war_support_factor = -0.60                 # -60% War Support
+				consumer_goods_factor = 0.40               # +40% Consumer Goods Factories
+				political_power_gain = -0.40  			   # -0.40 Political Power
+			}
+			rule = {
+				
+			}
+		}
+
+		Unemployment_Crisis = {
+			picture = unemployment_crisis
+
+			allowed = {
+				tag = GER
+			}
+			available = {}
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				
+				local_resources_factor = -0.20             # -20% Resource Gain Efficiency
+				industrial_capacity_factory = -0.40        # -40% Factory Output
+            	industrial_capacity_construction = -0.60   # -60% Construction Speed
+				recruitable_population_factor = -0.50      # -50% Recruitable Population Factor
+				consumer_goods_factor = 0.20               # +20% Consumer Goods Factories
+			}
+			rule = {
+				
+			}
+		}
+		
+		
+	}
+
+
+}
